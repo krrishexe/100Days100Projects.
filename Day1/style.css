@@ -2,7 +2,54 @@
     margin: 0;
     padding: 0;
 }
+.head{
+    color:rgb(14, 8, 8) ;
+    background-color: white;
+    text-align: center;
+    
+}
+h1{
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px ;
+}                                                                 
+
+                /* position absolute works only when the parent element has the property relative */
+.slider{
+    margin: 30px 30px;
+    position: relative;
+}
 img{
     height: 70vh;
     width: 100%;
+}
+.textarea{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    right: 40%;
+}
+.slide{
+    display: none;
+}
+.arrow{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    background-color: rgba(195, 223, 248, 0.77);
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 700px;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
 }
