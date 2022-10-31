@@ -1,8 +1,13 @@
 let flag = 2
 
 
-function handleOnClick(x){
-    flag = flag + x;
+
+function decreaseFlag(x){
+    flag+=x
+    slideShow(flag)
+}
+function increaseFlag(x){
+    flag+=x
     slideShow(flag)
 }
 
