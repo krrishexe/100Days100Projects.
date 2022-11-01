@@ -1,8 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    color: white;
-    /* background-color: black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: white;
+    background-color: black; */
 }
 .wrapper{
     height: 100vh;
@@ -12,7 +13,7 @@
     background:red;
 }
 .wrapper .display{
-    position: absolute;
+    position: relative;
     border-radius: 10px;
     height: 150px;
     width: 360px;
@@ -20,4 +21,21 @@
     justify-content: center;
     align-items: center;
     background:black;
+}
+.wrapper .display .display2{
+    position: absolute;
+    border-radius: 10px;
+    height: 130px;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:blue;
+}
+.wrapper .display .display2 #time {
+    color: white;
+    line-height: 80px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
