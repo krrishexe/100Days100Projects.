@@ -7,13 +7,16 @@ function getTime(){
     let seconds = date.getSeconds();
     let minutes = date.getMinutes();
     let hours = date.getHours();
+    const secondsInterval = 6;
 
-    const timeInterval = 6;
-    console.log(seconds)
 
-    secondsHand.style.transform = `rotate(${seconds*timeInterval}deg)`
-    minutesHand.style.transform = "rotate(1deg)"
-    hoursHand.style.transform = "rotate(1deg)"
+    // console.log(seconds)
+    // console.log(minutes)
+    // console.log(hours)
+
+    secondsHand.style.transform = `rotate(${seconds*secondsInterval}deg)`
+    minutesHand.style.transform = `rotate(${minutes*secondsInterval + seconds/10}deg)`
+    hoursHand.style.transform = `rotate(${hours *30 + minutes/2}deg)`
 }
 setInterval(() => {
     getTime();
