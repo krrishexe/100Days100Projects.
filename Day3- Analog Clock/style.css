@@ -11,6 +11,7 @@ html,body{
     height: 100vh;
 }
 .clock{
+    position: relative;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -27,6 +28,7 @@ html,body{
     height: 150px;
     width: 4px;
     background-color: blueviolet;
+    transform-origin: 0 100%;
 }
 #minutes{
     position: absolute;
@@ -35,6 +37,8 @@ html,body{
     left: 770px;
     bottom: 48vh;
     background-color: rgb(183, 81, 98);
+    /* transform: translateY(180deg); */
+    transform-origin: 0 100%;
 }
 #hours{
     position: absolute;
@@ -43,4 +47,5 @@ html,body{
     left: 770px;
     bottom: 48vh;
     background-color: orange;
+    transform-origin: 0 100%;
 }
