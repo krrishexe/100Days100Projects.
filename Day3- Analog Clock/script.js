@@ -14,9 +14,11 @@ function getTime(){
     // console.log(minutes)
     // console.log(hours)
 
-    secondsHand.style.transform = `rotate(${seconds*secondsInterval}deg)`
-    minutesHand.style.transform = `rotate(${minutes*secondsInterval + seconds/10}deg)`
-    hoursHand.style.transform = `rotate(${hours *30 + minutes/2}deg)`
+    secondsHand.style.transform = `rotate(${seconds*(360/60)}deg)`
+    minutesHand.style.transform = `rotate(${minutes*6}deg)`
+    console.log(minutes +" "+ secondsInterval+" "+ seconds)
+    console.log(minutes*secondsInterval + seconds/10)
+    hoursHand.style.transform = `rotate(${hours *(360/12) + minutes/2}deg)`
 }
 setInterval(() => {
     getTime();
