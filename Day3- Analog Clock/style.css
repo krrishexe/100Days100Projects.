@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    /* background-color:black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.clock{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 300px;
+    width: 300px;
+    /* background-color: azure;   */
+    border-radius: 50%;  
+    border: 5px solid yellowgreen;
+}
+#seconds{
+    position: absolute;
+    left: 770px;
+    bottom: 48vh;
+    height: 150px;
+    width: 4px;
+    background-color: black;
+}
