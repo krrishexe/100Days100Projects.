@@ -1,0 +1,46 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    /* height: 100vh; */
+    animation: animate 10s ease infinite;
+}
+.container{
+    height: 100vh;
+                            /* width 100% se vo element center me aajaega */
+    width: 100%;                                    
+    margin-left: 0px 50px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: transparent;
+    
+}
+.header__logo{
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+
+
+
+
+
+
+@keyframes animate {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+		background-position: 0% 50%;
+	}
+}
