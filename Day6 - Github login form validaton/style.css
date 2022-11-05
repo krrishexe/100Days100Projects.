@@ -1,34 +1,38 @@
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
-    background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     /* height: 100vh; */
     animation: animate 10s ease infinite;
 }
-main{
+
+main {
     text-align: center;
 }
-.container{
+
+.container {
     height: 100vh;
-                            /* width 100% se vo element center me aajaega */
-    width: 100%;                                    
+    /* width 100% se vo element center me aajaega */
+    width: 100%;
     margin-left: 0px 50px;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: transparent;
-    
+
 }
-.header__logo{
+
+.header__logo {
     text-align: center;
     margin: 0 auto;
 }
-.form-head{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.form-head {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
     text-align: center;
     font-weight: 100;
@@ -37,24 +41,27 @@ main{
     letter-spacing: -0.5px;
     margin-bottom: 16px;
 }
-.form-body{
+
+.form-body {
     color: #c9d1d9;
     padding: 20px 20px;
     margin-left: auto;
-    height: 300px;
+    height: 250px;
     width: 308px;
     border: 1px solid #30363d;
     background-color: #161b22;
     border-radius: 12px;
     text-align: left;
 }
-.form-text{
+
+.form-text {
     display: block;
     font-weight: 400;
     text-align: left;
     margin-bottom: 8px;
 }
-.form-input{
+
+.form-input {
     display: block;
     width: 100%;
     /* padding: 5px 12px; */
@@ -68,26 +75,57 @@ main{
     box-shadow: 0 0 transparent;
     margin-bottom: 16px;
 }
-.forgot-password{
-    display:block;
+
+.forgot-password {
+    font-size: 14px;
+    display: block;
     color: #58A6FF;
     margin: 0 auto;
     float: right;
     text-decoration: none;
+    /* padding: 8px; */
+}
+
+.form-button {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 5px 16px;
+    width: 100%;
+    color: white;
+    background-color: #238636;
+    line-height: 30px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 0 transparent;
+    font-family: inherit;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #2ea043;
+    border-color: rgba(240, 246, 252, 0.1);
+    transition-duration: 0.1s;
 }
 
 
 
 
 
+
 @keyframes animate {
-    0%{
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
+
     100% {
-		background-position: 0% 50%;
-	}
+        background-position: 0% 50%;
+    }
 }
