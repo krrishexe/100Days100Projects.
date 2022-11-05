@@ -1,4 +1,5 @@
 body {
+    /* background-color: #0d1117; */
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -123,6 +124,28 @@ main {
 .after-form-link{
     text-decoration: none;
     color: #58A6FF;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+.site-link{
+    margin: 0px 10px;
+    color: #58A6FF;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.site-link__grey {
+    color: #8b949e;
+}
+.site-link:hover {
+    text-decoration: underline;
+    color: #58a6ff;
 }
 
 @keyframes animate {
