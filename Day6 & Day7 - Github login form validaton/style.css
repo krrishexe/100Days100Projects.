@@ -148,6 +148,7 @@ main {
     color: #58a6ff;
 }
 #error-element{
+    color: rgb(230, 77, 77);
     display: none;
     font-size: smaller;
     background-color: #0d1117;
