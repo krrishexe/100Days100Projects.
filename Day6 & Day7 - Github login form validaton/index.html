@@ -27,15 +27,28 @@
             <div class="form-head ">
                 <h1>Sign In to Github </h1>
             </div>
+
+
             <div class="form-body">
-                <form action="">
-                    <label for="" class="form-text">Username or Email address</label>
-                    <input type="email" name="" id="" class="form-input">
-                    <label for="" class="form-text">Password</label>
-                    <input type="email" name="" id="" class="form-input">
+
+                
+
+                <form action="/" method="GET" id="form">
+
+                    <label for="username" class="form-text">Username or Email address</label>
+                    <input type="email" name="username" id="email" class="form-input" required>
+
+                    <!-- label ka for or input ka name ka attribute same hi hona chahiye hamesha -->
+                    <div id="error-element">
+                    </div>
+                    <br>
+                    <label for="password" class="form-text">Password</label>
+                    <input type="password" name="password" id="password" class="form-input">
+
                     <a href="" class="forgot-password">Forgot password?</a>
                     <input type="submit" value="Sign In" class="form-button">
                 </form>
+
             </div>
             <div class="after-form-body">
                 <p class="after-form-text">New To Github?
@@ -46,12 +59,12 @@
     </div>
 
     <footer>
-    <ul class="footer-list">
-        <li><a href="#" class="site-link">Terms</a></li>
-        <li><a href="#" class="site-link">Privacy</a></li>
-        <li><a href="#" class="site-link">Security</a></li>
-        <li><a href="#" class="site-link site-link__grey">Contact GitHub</a></li>
-    </ul>
+        <ul class="footer-list">
+            <li><a href="#" class="site-link">Terms</a></li>
+            <li><a href="#" class="site-link">Privacy</a></li>
+            <li><a href="#" class="site-link">Security</a></li>
+            <li><a href="#" class="site-link site-link__grey">Contact GitHub</a></li>
+        </ul>
     </footer>
 
 
