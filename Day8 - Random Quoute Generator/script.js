@@ -4,7 +4,7 @@ const btnquoteDiv = document.getElementById("btnquote")
 console.log("object");
                                                 // 2 Methods.
 
-// method - 1
+//                                          method - 1
 
 function run(){
     fetch("https://api.quotable.io/random")
@@ -17,7 +17,8 @@ function run(){
 }
 
 
-// method - 2
+// 
+//                                    This is method - 2
 
 // const run = async() => {
 //     const url = 'https://api.quotable.io/random';
