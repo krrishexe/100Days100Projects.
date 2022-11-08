@@ -28,7 +28,7 @@ function App() {
 
   const calculate = () =>{
     console.log("object");
-    setCalc((calc).toString());
+    setCalc(eval((calc)).toString());
   }
 
 
@@ -60,7 +60,7 @@ function App() {
         <button value={`-`} onClick={() => updateCalc('-')}>-</button>
         <button value={0} onClick={() => updateCalc('0')} className='span-two'>0</button>
         <button value={`.`} onClick={() => updateCalc('/')}>.</button>
-        <button value={`=`} onClick={() => calculate} >=</button>
+        <button value={`=`} onClick={calculate} >=</button>
 
       </div>
     </div>
