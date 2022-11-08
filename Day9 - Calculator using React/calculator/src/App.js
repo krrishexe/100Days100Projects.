@@ -3,65 +3,64 @@ import './App.css';
 import './media/style.css';
 
 
-
-
 function App() {
   
-  const showOnScreen =(buttonValue) =>{
-    setText(buttonValue);
-    console.log(buttonValue);
-    console.log(setText(`{buttonValue}`));
 
-    const currentOutputDiv = document.getElementById("previous");
-    currentOutputDiv.innerHTML = `<p>${buttonValue}</p>`
-    
+  const [calc ,setCalc] = useState("")
+  const [result,setResult] = useState();
+
+  const ops = ['/','*','+','-','.'];
+
+  const updateCalc = (value)=>{
+
+    if(
+      (ops.includes(value) && calc === '' ) || (ops.includes(value) && ops.includes(calc.slice(-1)))
+    ){
+      return ;
+    }
+
+    setCalc(calc + value)
+
+    if(!ops.includes(value)){
+      setResult(eval(calc + value).toString())
+    }
   }
 
-  const handleOnClick =(event)=>{
-    // console.log(text);
-    const buttonValue = event.target.value;
-
-    console.log(event.target.value);
-    
-
-    showOnScreen(buttonValue);
-    }
+  const calculate = () =>{
+    console.log("object");
+    setCalc((calc).toString());
+  }
 
 
-  const handleOnClear =()=>{
-    // console.log(text);
-    setText("")
-    }
 
-  const [text,setText] = useState("0")
 
   return (
     <div className="App">
       <div className="grid-container">
 
         <div className="output">
-          <div id ="previous" className="previousOutput"><p>0</p></div>
-          <div className="currentOutput"><p>0</p></div>
+          <div className="previousOutput">{result ? `${result}` : ''} </div>
+          <div id ="current"  className="currentOutput">{calc || "0"}</div>
         </div>
 
-        <button onClick={handleOnClear} className='span-two'>AC</button>    
-        <button onClick={handleOnClick}>DEL</button>
-        <button value={`/`} onClick={handleOnClick}>/</button>
-        <button value={1} onClick={handleOnClick}>1</button>
-        <button value={2} onClick={handleOnClick}>2</button>
-        <button value={3} onClick={handleOnClick}>3</button>
-        <button value={`*`} onClick={handleOnClick}>*</button>
-        <button value={4} onClick={handleOnClick}>4</button>
-        <button value={5} onClick={handleOnClick}>5</button>
-        <button value={6} onClick={handleOnClick}>6</button>
-        <button value={`+`} onClick={handleOnClick}>+</button>
-        <button value={7} onClick={handleOnClick}>7</button>
-        <button value={8} onClick={handleOnClick}>8</button>
-        <button value={9} onClick={handleOnClick}>9</button>
-        <button value={`-`} onClick={handleOnClick}>-</button>
-        <button value={0} onClick={handleOnClick} className='span-two'>0</button>
-        <button value={`.`} onClick={handleOnClick}>.</button>
-        <button value={`=`} onClick={handleOnClick}>=</button>
+        <button onClick={() => updateCalc('/')} className='span-two'>AC</button>    
+        <button >DEL</button>
+        <button value={`/`} onClick={() => updateCalc('/')}>/</button>
+        <button value={1} onClick={() => updateCalc('1')}>1</button>
+        <button value={2} onClick={() => updateCalc('2')}>2</button>
+        <button value={3} onClick={() => updateCalc('3')}>3</button>
+        <button value={`*`} onClick={() => updateCalc('*')}>*</button>
+        <button value={4} onClick={() => updateCalc('4')}>4</button>
+        <button value={5} onClick={() => updateCalc('5')}>5</button>
+        <button value={6} onClick={() => updateCalc('6')}>6</button>
+        <button value={`+`} onClick={() => updateCalc('+')}>+</button>
+        <button value={7} onClick={() => updateCalc('7')}>7</button>
+        <button value={8} onClick={() => updateCalc('8')}>8</button>
+        <button value={9} onClick={() => updateCalc('9')}>9</button>
+        <button value={`-`} onClick={() => updateCalc('-')}>-</button>
+        <button value={0} onClick={() => updateCalc('0')} className='span-two'>0</button>
+        <button value={`.`} onClick={() => updateCalc('/')}>.</button>
+        <button value={`=`} onClick={() => calculate} >=</button>
 
       </div>
     </div>
