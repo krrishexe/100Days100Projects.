@@ -1,3 +1,4 @@
+import { clear } from '@testing-library/user-event/dist/clear';
 import { useState } from 'react';
 import './App.css';
 import './media/style.css';
@@ -11,16 +12,17 @@ function App() {
 
   const ops = ['/','*','+','-','.'];
 
-  const updateCalc = (value)=>{
 
+
+
+
+  const updateCalc = (value)=>{
     if(
       (ops.includes(value) && calc === '' ) || (ops.includes(value) && ops.includes(calc.slice(-1)))
     ){
       return ;
     }
-
     setCalc(calc + value)
-
     if(!ops.includes(value)){
       setResult(eval(calc + value).toString())
     }
@@ -29,6 +31,10 @@ function App() {
   const calculate = () =>{
     console.log("object");
     setCalc(eval((calc)).toString());
+  }
+  const clearFunc=()=>{
+    setCalc("")
+    setResult("")
   }
 
 
@@ -43,7 +49,7 @@ function App() {
           <div id ="current"  className="currentOutput">{calc || "0"}</div>
         </div>
 
-        <button onClick={() => updateCalc('/')} className='span-two'>AC</button>    
+        <button onClick={() => clearFunc()} className='span-two'>AC</button>    
         <button >DEL</button>
         <button value={`/`} onClick={() => updateCalc('/')}>/</button>
         <button value={1} onClick={() => updateCalc('1')}>1</button>
