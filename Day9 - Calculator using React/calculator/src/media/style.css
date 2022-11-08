@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    animation: bgChanger 15s linear infinite;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+    margin-top: 4em;
+    grid-template-columns: repeat(4,6rem);
+    grid-template-rows: minmax(7rem , auto) repeat(5,6rem);
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/ -1;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: space-around;
+}
+.output .previousOutput{
+    color: rgba(255, 255, 255, .75);
+}
+.output .currentOutput{
+    color: white;
+    font-size: 2rem;
+}
+button{
+    background:rgb(228, 228, 255);
+    cursor: pointer;
+    font-size: 1.75rem;
+    border: 2px solid white;
+}
+button:hover{
+    background: rgba(255, 255, 255 , 1) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bgChanger{
+    0%{
+        background: #ee6055;
+    }
+    25%{
+        background: #60d394;
+    }
+    50%{
+        background: #aaf683;
+    }
+    75%{
+        background: #ffd97d;
+    }
+    100%{
+        background: #d95335;
+    }
+}
