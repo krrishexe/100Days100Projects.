@@ -1,0 +1,16 @@
+*{
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: #272639;
+}
+body{
+    background: #f0bbf4;
+}
+.wrapper{
+    height: 525px;
+    width: 360px;
+    color: #272639;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin: 100px auto;
+}
