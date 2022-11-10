@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Vanilla JavaScript Stopwatch</h1>
+        <div class="wrapper">
+            <p><span id="minutes">00 Min</span><span> : </span><span id="seconds">00 Sec</span><span> : </span><span id="tens">00</span></p>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="startbtn">Start</button>
+            <button class="btn" id="stopbtn">Lap</button>
+            <button class="btn" id="resetbtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
