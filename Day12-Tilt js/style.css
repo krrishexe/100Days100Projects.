@@ -18,3 +18,11 @@
     height: 300px;
     width: 150px;
 }
+p{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.1;
+    line-height: 10px;
+    margin: 50px;
+    
+}
