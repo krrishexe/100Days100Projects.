@@ -52,6 +52,11 @@ h1{
     width: 100%;
     padding: 16px;
 }
+.qrcode img {
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(67, 67, 68, 0.25);
+    padding: 4px;
+}
 .form button{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;

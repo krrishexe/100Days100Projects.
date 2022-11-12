@@ -10,15 +10,16 @@
 </head>
 
 <body>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 
     <div class="container">
         <h1>QR Code Generator</h1>
         <form action="" class="form">
 
-            <input type="url" id="website" name="website" placeholder="https://google.com" !required>
+            <input type="url" id="website" name="website" placeholder="https://your-website.com" !required>
 
             <div id="qrcode-container">
-                <div id="qrcode" class="qrcode"></div>
+                <div id="qrcode" class="qrcode"><img src="" alt=""></div>
             </div>
 
             <button type="button" onclick="generateQRCode()">Generate QR Code</button>
@@ -31,7 +32,6 @@
 
 
     <script src="script.js"></script>
-    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 
 </body>
 
