@@ -1,5 +1,15 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.2.4"
+  },
+  "watch": {
+    "test": "{src,test}/*.js"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "watch": "npm-watch"
+  },
+  "dependencies": {
+    "npm-watch": "^0.11.0"
   }
 }
