@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'apo' : ['apologue','sans-serif'],
         'rale' : ['raleway','sans-serif'],
         'quick' : ['Quicksand','sans-serif'],
         'Rogue' : ['Rouge Script','cursive'],
-        'Pinyon' : ['Pinyon Script','cursive']
+        'Pin' : ['Pinyon Script','cursive']
       }
     },
   },
