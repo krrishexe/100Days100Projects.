@@ -46,7 +46,6 @@ code {
 }
 h1 {
   color: #333;
-  font-family: tahoma;
   font-size: 3rem;
   font-weight: 100;
   line-height: 1.5;
@@ -58,24 +57,28 @@ h1 {
 }
 
 h1 span {
-  font-size: 40px;
-  margin-left: 40px;
+  font-size: 160px;
+  font-weight: 500;
+  margin-left: 0px;
 }
 
 .message {
-  color: #CD9DFA;
+  color: #bc7afa;
   display: block;
-  font-weight: 900;
-  overflow: hidden;
+  font-weight: 200;
+  overflow:visible;
   position: absolute;
+  margin-top: 10px;
+  margin-right: 150px;
   padding-left: 0.5rem;
   top: 0.2rem;
-  right: 200px;
+  left: 80%;
   animation: openclose 5s ease-in-out infinite;
 }
 
 .word1, .word2, .word3 {
-  font-family: tahoma;
+  /* position: relative; */
+
 }
 
 @keyframes openclose {
