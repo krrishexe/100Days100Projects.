@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
 @font-face {
-  font-family: 'apologue';
+  font-family: "apologue";
   font-style: normal;
   font-weight: normal;
-  src: local('apologue'), url('/media/apologue.otf') format('truetype');
-} 
+  src: local("apologue"), url("/src/media/apologue.otf") format("truetype");
+}
 
-                      /* how to use a .otf file in css  */
+/* how to use a .otf file in css  */
 
 @tailwind base;
 @tailwind components;
@@ -17,14 +17,56 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.heroBg {
+  background-color: #e5e5f7;
+  opacity: 0.6;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ac5cf7,
+    #ac5cf7 5px,
+    #e5e5f7 5px,
+    #e5e5f7 25px
+  );
+}
+
+span {
+
+  /* font: 700 4em/1 "Oswald", sans-serif; */
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: krish 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+/* Animate Background Image */
+@keyframes krish {
+0% { background-position: 0% 50%; }
+100% { background-position: 100% 50%; }
 }
