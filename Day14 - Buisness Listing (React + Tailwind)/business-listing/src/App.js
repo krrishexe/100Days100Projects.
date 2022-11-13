@@ -10,14 +10,14 @@ function App() {
             </div>
 
             <div>
-              <button class="button py-2 px-4 rounded-md border border-amber-500 bg-transparent hover:text-white">
+              <button class="button py-2 px-4 rounded-md border text-purple-500 border-purple-500  bg-transparent hover:bg-purple-300 hover:text-white">
                 Add your Business
               </button>
             </div>
 
-            <div>
-              <button></button>
-              <button></button>
+            <div className="space-x-4">
+              <button className="text-lg ">Sign In</button>
+              <button className="text-lg ">Sign Up</button>
             </div>
 
         </div>

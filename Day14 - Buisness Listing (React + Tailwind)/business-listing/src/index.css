@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@font-face {
+  font-family: 'apologue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('apologue'), url('/media/apologue.otf') format('truetype');
+} 
+
+                      /* how to use a .otf file in css  */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
