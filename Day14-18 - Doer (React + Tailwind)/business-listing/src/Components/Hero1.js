@@ -6,11 +6,11 @@ export default function Hero1(props) {
     <div>
       <div className="bg-white text-6xl py-40">
         <h1>
-          <span>Business </span>
+          <span>Tasks</span>
           <div className="message font-rale">
-            <div className="word1 ">Startup</div>
-            <div className="word2 ">Idea's</div>
-            <div className="word3 ">Creative</div>
+            <div className="word2 ">oh Shit!</div>
+            <div className="word1 ">Doing</div>
+            <div className="word3 ">Done :)</div>
           </div>
         </h1>
       </div>
@@ -18,8 +18,8 @@ export default function Hero1(props) {
       <div className="relative h-100 heroBg">
         <div className="flex items-center justify-between my-5">
             <div className="flex flex-col text-start text-black ">
-                <p className="text-7xl ">Create <span className=" text-black font-quick font-bold text-9xl">TASKS </span>
-                that you want to Complete. </p>
+                <p className="text-7xl ">The only <span className=" text-black font-quick font-bold text-9xl">TASKS </span>
+                App You Will Need.</p>
                 <p className="text-xl my-24">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis amet quod itaque necessitatibus quisquam repellat tempore corporis explicabo quas earum velit, sapiente deleniti sed aliquid nobis ipsum quia quidem obcaecati, magni animi autem, neque voluptatem soluta sint. Nisi, dolores. Adipisci.</p>
             </div>
           <img src={props.hero} alt="" />
