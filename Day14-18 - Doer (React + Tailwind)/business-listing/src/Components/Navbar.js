@@ -4,14 +4,15 @@ export default function Navbar() {
   return (
     <div>
       <div className="w-9/12 mx-auto py-5 flex justify-between items-center">
-        <div className="text-3xl font-Pin font-semibold">
-          <a href="#"> Business Listing</a>
-        </div>
 
         <div>
           <button className="button py-2 px-4 rounded-md border text-purple-500 border-purple-500  bg-transparent hover:bg-purple-400 hover:text-white hover:border-white font-semibold">
-            Add your Business
+            Add Tasks
           </button>
+        </div>
+
+        <div className="text-3xl font-Pin font-semibold">
+          <a href="#"> Doer</a>
         </div>
 
         <div className="space-x-4">

@@ -37,15 +37,10 @@ code {
                     /* Purple Diagonal lines code */
 .heroBg {
   background-color: #e5e5f7;
-  opacity: 0.6;
-  background: repeating-linear-gradient(
-    -45deg,
-    #ac5cf7,
-    #ac5cf7 5px,
-    #e5e5f7 5px,
-    #e5e5f7 25px
-  );
+  opacity: 0.8;
+  background: repeating-linear-gradient( -45deg, #444cf7, #444cf7 20px, #e5e5f7 20px, #e5e5f7 100px );
 }
+
 h1 {
   color: #333;
   font-size: 3rem;
@@ -147,3 +142,6 @@ h1 span {
     text-indent: 0;
   }
 }
+
+
+
