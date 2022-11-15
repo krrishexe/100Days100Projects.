@@ -143,19 +143,4 @@ h1 span {
     text-indent: 0;
   }
 }
-#page {
-  margin-top: 50px;
-  width: 100vw;
-  height: 50vh;
-}
-#screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  overflow-x: hidden;
-  transition: .1s;
-}
+                        /* ************* Hero 2 css ************ */

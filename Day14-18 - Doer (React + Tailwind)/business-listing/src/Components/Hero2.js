@@ -3,20 +3,9 @@ import React from "react";
 export default function Hero2() {
   return (
     <div>
-      <div id="page">
-        <div className="container container-1">
-          <div>
-            Text <span>1</span>
-          </div>
-        </div>
-        <div id="screen">
-          <div className="container container-2">
-            <div>
-              Text <span>2</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p className="text-2xl font-thin ">Hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet accusantium, explicabo cupiditate officiis iure beatae quia corporis minus autem perspiciatis, aliquid fugit enim recusandae, itaque repellendus. Est, aut quasi.</p>
     </div>
   );
 }
+
+
