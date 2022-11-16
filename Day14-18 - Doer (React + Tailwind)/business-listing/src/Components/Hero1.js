@@ -20,8 +20,8 @@ export default function Hero1(props) {
           <div className="flex flex-col text-start text-black ">
             <p className="text-7xl leading-tighter">
               The only
-              <span className=" text-black font-quick font-bold text-9xl">
-                TASKS 
+              <span className=" text-black font-rale font-semibold text-9xl">
+                TASKS
               </span>
               App You Will Ever Need. 🤍
             </p>
@@ -31,14 +31,51 @@ export default function Hero1(props) {
       </div>
 
       <div className=" h-screen flex items-center justify-between">
-
-      <div class="bg text-6xl py-40"></div>
-      <div class="bg bg2 text-6xl py-48"></div>
-      <div class="bg bg3 text-6xl py-56"></div>
+        <div className="bg text-6xl py-40"></div>
+        <div className="bg bg2 text-6xl py-48"></div>
+        <div className="bg bg3 text-6xl py-56"></div>
       </div>
-      {/* <div class="content ">
-        <h1>Sliding Diagonals Background Effect</h1>
-      </div> */}
+      <div className="-my-52 content py-52 flex justify-center items-center flex-col">
+        <h1 className="font-rale ">Creator's </h1>
+        <div class="hero3container">
+  <div class="card card0">
+    <div class="border">
+      <h2>Al Pacino</h2>
+      <div class="icons">
+        <i class="fa fa-codepen" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="card card1">
+    <div class="border">
+      <h2>Ben Stiller</h2>
+      <div class="icons">
+        <i class="fa fa-codepen" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="card card2">
+    <div class="border">
+      <h2>Patrick Stewart</h2>
+      <div class="icons">
+        <i class="fa fa-codepen" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="absolute right-0 left-0 z-10">
         <div className="w-9/12 mx-auto py-5 flex justify-between items-center">
           <div>
-            <button className="button py-2 px-4 rounded-md border text-purple-500 border-purple-500  bg-transparent hover:bg-purple-400 hover:text-white hover:border-white font-semibold">
+            <button className=" py-2 px-4 rounded-md  text-purple-500 border-purple-500  bg-transparent hover:bg-purple-400 hover:text-white hover:border-white font-semibold">
               Add Tasks
             </button>
           </div>
