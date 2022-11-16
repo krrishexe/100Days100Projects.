@@ -39,7 +39,7 @@ export default function Hero1(props) {
         <h1 className="font-rale ">Creator's </h1>
         <div class="hero3container">
   <div class="card card0">
-    <div class="border">
+    <div class="hoverBorder">
       <h2>Al Pacino</h2>
       <div class="icons">
         <i class="fa fa-codepen" aria-hidden="true"></i>
@@ -51,7 +51,7 @@ export default function Hero1(props) {
     </div>
   </div>
   <div class="card card1">
-    <div class="border">
+    <div class="hoverBorder">
       <h2>Ben Stiller</h2>
       <div class="icons">
         <i class="fa fa-codepen" aria-hidden="true"></i>
@@ -63,7 +63,7 @@ export default function Hero1(props) {
     </div>
   </div>
   <div class="card card2">
-    <div class="border">
+    <div class="hoverBorder">
       <h2>Patrick Stewart</h2>
       <div class="icons">
         <i class="fa fa-codepen" aria-hidden="true"></i>

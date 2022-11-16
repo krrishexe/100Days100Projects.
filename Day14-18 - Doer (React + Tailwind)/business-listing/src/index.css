@@ -214,7 +214,7 @@ h1 span {
   align-items: center;
   margin: 0 auto;
 }
-.border{
+.hoverBorder{
   height: 369px;
   width: 290px;
   background: transparent;
@@ -222,7 +222,7 @@ h1 span {
   transition: border 1s;
   position: relative;
 }
-.border:hover{
+.hoverBorder:hover{
     border: 1px solid white;
 }
 .card{
