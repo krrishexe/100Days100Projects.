@@ -1,5 +1,11 @@
 import React from "react";
-import { FaPinterest , FaInstagram ,FaLinkedin, FaTwitter , FaCodepen } from "react-icons/fa";
+import {
+  FaPinterest,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaCodepen,
+} from "react-icons/fa";
 
 export default function Hero1(props) {
   return (
@@ -41,66 +47,118 @@ export default function Hero1(props) {
         </h1>
       </div>
 
-      <div className=" flex items-center justify-evenly mt-10 ">
-        <div className="card card0">
-          <div className="hoverBorder">
-            <h2>Al Pacino</h2>
+      <div className=" flex items-center justify-evenly mt-10 flex-col">
+        <div className="flex justify-start items-center">
+
+          <div className="card card0">
+            <div className="hoverBorder">
+              <h2>Al Pacino</h2>
+            </div>
           </div>
+
+          <div className="mx-36">
+            <p className=" text-black ">
+              <span className="effect-shine">Krish</span>
+            </p>
+            <p className=" text-black ">
+              <span className="effect-shine">Full Stack Web Developer</span>
+            </p>
+            <br />
+            <ul className="flex justify-evenly ">
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaCodepen />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaPinterest />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaInstagram />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaLinkedin />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaTwitter />
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+
         </div>
-        <div>
-          <p className=" text-black ">
-            <span className="effect-shine">Krish</span>
-          </p>
-          <p className=" text-black ">
-            <span className="effect-shine">Full Stack Web Developer</span>
-          </p>
-          <br />
-          <ul className="flex justify-evenly ">
-            <li>
-              <span className="effect-shine">
-                <a href="">
-                  <FaCodepen />
-                </a>
-              </span>
-            </li>
-            <li>
-              <span className="effect-shine">
-                <a href="">
-                  <FaPinterest />
-                </a>
-              </span>
-            </li>
-            <li>
-              <span className="effect-shine">
-                <a href="">
-                  <FaInstagram />
-                </a>
-              </span>
-            </li>
-            <li>
-              <span className="effect-shine">
-                <a href="">
-                  <FaLinkedin />
-                </a>
-              </span>
-            </li>
-            <li>
-              <span className="effect-shine">
-                <a href="">
-                  <FaTwitter />
-                </a>
-              </span>
-            </li>
-          </ul>
+
+        <div className="flex flex-row justify-start items-center">
+          <div className="mx-40">
+            <p className=" text-black ">
+              <span className="effect-shine">Ashwani</span>
+            </p>
+            <p className=" text-black ">
+              <span className="effect-shine">Backend Engineer</span>
+            </p>
+            <br />
+            <ul className="flex justify-evenly ">
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaCodepen />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaPinterest />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaInstagram />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaLinkedin />
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span className="effect-shine">
+                  <a href="">
+                    <FaTwitter />
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="card card0">
+            <div className="hoverBorder">
+              <h2>Al Pacino</h2>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* <div className="card card1">
-          <div className="hoverBorder">
-            <h2>Ben Stiller</h2>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

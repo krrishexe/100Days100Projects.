@@ -320,6 +320,7 @@ p span{
   display: inline-block;
   position: relative;
   font-family: 'Raleway', sans-serif;
+  cursor: crosshair;
 }
 
 .effect-shine:hover {
