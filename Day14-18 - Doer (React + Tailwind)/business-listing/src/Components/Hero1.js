@@ -1,6 +1,5 @@
 import React from "react";
-import { DiCodepen } from "react-icons/fa";
-import { FaCodepen } from "react-icons/fa";
+import { FaPinterest , FaInstagram ,FaLinkedin, FaTwitter , FaCodepen } from "react-icons/fa";
 
 export default function Hero1(props) {
   return (
@@ -42,25 +41,66 @@ export default function Hero1(props) {
         </h1>
       </div>
 
-        <div className=" flex items-center justify-evenly mt-10 ">
-          <div className="card card0">
-            <div className="hoverBorder">
-              <h2>Al Pacino</h2>
-            </div>
-          </div>
-          <div>
-          <p className=" text-7xl "><span className="effect-shine">Krish</span></p>
-          
+      <div className=" flex items-center justify-evenly mt-10 ">
+        <div className="card card0">
+          <div className="hoverBorder">
+            <h2>Al Pacino</h2>
           </div>
         </div>
+        <div>
+          <p className=" text-black ">
+            <span className="effect-shine">Krish</span>
+          </p>
+          <p className=" text-black ">
+            <span className="effect-shine">Full Stack Web Developer</span>
+          </p>
+          <br />
+          <ul className="flex justify-evenly ">
+            <li>
+              <span className="effect-shine">
+                <a href="">
+                  <FaCodepen />
+                </a>
+              </span>
+            </li>
+            <li>
+              <span className="effect-shine">
+                <a href="">
+                  <FaPinterest />
+                </a>
+              </span>
+            </li>
+            <li>
+              <span className="effect-shine">
+                <a href="">
+                  <FaInstagram />
+                </a>
+              </span>
+            </li>
+            <li>
+              <span className="effect-shine">
+                <a href="">
+                  <FaLinkedin />
+                </a>
+              </span>
+            </li>
+            <li>
+              <span className="effect-shine">
+                <a href="">
+                  <FaTwitter />
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        {/* <div className="card card1">
+      {/* <div className="card card1">
           <div className="hoverBorder">
             <h2>Ben Stiller</h2>
           </div>
         </div>
       </div> */}
-
     </>
   );
 }
