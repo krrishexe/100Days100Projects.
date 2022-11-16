@@ -52,11 +52,10 @@ export default function Hero1(props) {
 
           <div className="card card0">
             <div className="hoverBorder">
-              <h2>Al Pacino</h2>
             </div>
           </div>
-
-          <div className="mx-36">
+          
+          <div className="mx-40">
             <p className=" text-black ">
               <span className="effect-shine">Krish</span>
             </p>
@@ -111,10 +110,10 @@ export default function Hero1(props) {
               <span className="effect-shine">Ashwani</span>
             </p>
             <p className=" text-black ">
-              <span className="effect-shine">Backend Engineer</span>
+              <span className="effect-shine">Backend & ML Engineer</span>
             </p>
             <br />
-            <ul className="flex justify-evenly ">
+            <ul className="flex justify-evenly">
               <li>
                 <span className="effect-shine">
                   <a href="">
@@ -152,9 +151,8 @@ export default function Hero1(props) {
               </li>
             </ul>
           </div>
-          <div className="card card0">
+          <div className="card card0 ">
             <div className="hoverBorder">
-              <h2>Al Pacino</h2>
             </div>
           </div>
         </div>
