@@ -4,7 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTwitter,
-  FaCodepen,
+  FaGithub
 } from "react-icons/fa";
 
 export default function Hero1(props) {
@@ -35,15 +35,17 @@ export default function Hero1(props) {
           <img src={props.hero} alt="" />
         </div>
       </div>
-
+                         {/* **************** Background waves ******************** */}
       <div className=" h-screen">
         <div className="bg text-6xl py-40"></div>
         <div className="bg bg2 text-6xl py-48"></div>
         <div className="bg bg3 text-6xl py-56"></div>
       </div>
-      <div className=" flex justify-center items-center flex-col">
+
+
+      <div className="flex justify-center items-center flex-col">
         <h1 className="font-rale ">
-          Creator's <hr className=" my-5 bg-black/50 text-black" />{" "}
+          Creator's <hr className=" my-5 bg-black/50 text-black" />
         </h1>
       </div>
 
@@ -67,7 +69,7 @@ export default function Hero1(props) {
               <li>
                 <span className="effect-shine">
                   <a href="">
-                    <FaCodepen />
+                    <FaGithub />
                   </a>
                 </span>
               </li>
@@ -117,7 +119,7 @@ export default function Hero1(props) {
               <li>
                 <span className="effect-shine">
                   <a href="">
-                    <FaCodepen />
+                    <FaGithub />
                   </a>
                 </span>
               </li>
@@ -157,6 +159,8 @@ export default function Hero1(props) {
           </div>
         </div>
       </div>
+
+
     </>
   );
 }
