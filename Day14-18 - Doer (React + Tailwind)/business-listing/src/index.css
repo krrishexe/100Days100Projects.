@@ -15,10 +15,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
 body {
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -26,21 +27,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-::selection{
-  background:#debcfe;
+::selection {
+  background: #debcfe;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-                    /* Purple Diagonal lines code */
+/* Purple Diagonal lines code */
 .heroBg {
   background-color: #e5e5f7;
   opacity: 0.8;
-  background: repeating-linear-gradient( -45deg, #444cf7, #444cf7 20px, #e5e5f7 20px, #e5e5f7 100px );
+  background: repeating-linear-gradient(
+    -45deg,
+    #444cf7,
+    #444cf7 20px,
+    #e5e5f7 20px,
+    #e5e5f7 100px
+  );
+  opacity: 1;
 }
-                          /* till here */
+/* till here */
 
 h1 {
   color: #333;
@@ -64,7 +72,7 @@ h1 span {
   color: #bc7afa;
   display: block;
   font-weight: 200;
-  overflow:visible;
+  overflow: visible;
   position: absolute;
   margin-top: 10px;
   margin-right: 150px;
@@ -74,9 +82,10 @@ h1 span {
   animation: openclose 5s ease-in-out infinite;
 }
 
-.word1, .word2, .word3 {
+.word1,
+.word2,
+.word3 {
   /* position: relative; */
-
 }
 
 @keyframes openclose {
@@ -104,7 +113,6 @@ h1 span {
   }
   38% {
     top: -4.5rem;
-    
   }
   48% {
     top: -4.5rem;
@@ -143,4 +151,54 @@ h1 span {
     text-indent: 0;
   }
 }
-                        /* ************* Hero 2 css ************ */
+/* ************* Hero 2 css ************ */
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+/* .content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  z-index: 100;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+} */
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
