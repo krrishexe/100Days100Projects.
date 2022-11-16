@@ -16,7 +16,7 @@ export default function Hero1(props) {
         </h1>
       </div>
 
-      <div className="relative h-100 heroBg">
+      <div className="relative h-100 heroBg -mb-36">
         <div className="flex items-center justify-between ">
           <div className="flex flex-col text-start text-black ">
             <p className="text-7xl leading-tighter">
@@ -31,14 +31,14 @@ export default function Hero1(props) {
         </div>
       </div>
 
-      <div className=" h-screen flex items-center justify-between">
+      <div className=" h-screen">
         <div className="bg text-6xl py-40"></div>
         <div className="bg bg2 text-6xl py-48"></div>
         <div className="bg bg3 text-6xl py-56"></div>
       </div>
       <div className="-my-96 flex justify-center items-center flex-col">
         <h1 className="font-rale ">Creator's <hr className=" my-5 bg-black/50 text-black" /> </h1>
-        
+
         <div className="hero3container">
           <div className="card card0">
             <div className="hoverBorder">
