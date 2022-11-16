@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHeart } from "react-icons/fa";
+var FontAwesome = require("react-fontawesome");
 
 export default function Hero1(props) {
   return (
@@ -37,44 +37,44 @@ export default function Hero1(props) {
       </div>
       <div className="-my-52 content py-52 flex justify-center items-center flex-col">
         <h1 className="font-rale ">Creator's </h1>
-        <div class="hero3container">
-  <div class="card card0">
-    <div class="hoverBorder">
-      <h2>Al Pacino</h2>
-      <div class="icons">
-        <i class="fa fa-codepen" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-dribbble" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="card card1">
-    <div class="hoverBorder">
-      <h2>Ben Stiller</h2>
-      <div class="icons">
-        <i class="fa fa-codepen" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-dribbble" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-  <div class="card card2">
-    <div class="hoverBorder">
-      <h2>Patrick Stewart</h2>
-      <div class="icons">
-        <i class="fa fa-codepen" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-dribbble" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-      </div>
-    </div>
-  </div>
-</div>
+        <div className="hero3container">
+          <div className="card card0">
+            <div className="hoverBorder">
+              <h2>Al Pacino</h2>
+              <div className="icons">
+                <i className="fa fa-codepen" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+                <i className="fa fa-dribbble" aria-hidden="true"></i>
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div className="card card1">
+            <div className="hoverBorder">
+              <h2>Ben Stiller</h2>
+              <div className="icons">
+                <i className="fa fa-codepen" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+                <i className="fa fa-dribbble" aria-hidden="true"></i>
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div className="card card2">
+            <div className="hoverBorder">
+              <h2>Patrick Stewart</h2>
+              <div className="icons">
+                <i className="fa fa-codepen" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
+                <i className="fa fa-dribbble" aria-hidden="true"></i>
+                <i className="fa fa-twitter" aria-hidden="true"></i>
+                <i className="fa fa-facebook" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
