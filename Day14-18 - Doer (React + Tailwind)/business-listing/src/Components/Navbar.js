@@ -48,6 +48,7 @@ export default function Navbar() {
 
           <div className="space-x-4">
             <button className="text-lg ">Sign In</button>
+            <span>/</span>
             <button className="text-lg ">Sign Up</button>
           </div>
         </div>
