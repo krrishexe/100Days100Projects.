@@ -36,6 +36,28 @@ code {
     monospace;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #debcfe #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #debcfe;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
                             /* ********** Navbar code ********** */
   .btn {
     display: inline-block;
@@ -48,7 +70,7 @@ code {
     border-radius: 50%;
     text-decoration: none;
     font-size: 1.2em;
-    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .3);
     margin: 20px;
 }
   #sidenav {
@@ -163,6 +185,9 @@ ul {
   opacity: 1;
 }
 /* till here */
+
+
+/* oh shit , doing , done  */
 
 h1 {
   color: #333;
