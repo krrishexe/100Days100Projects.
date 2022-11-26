@@ -40,7 +40,7 @@ border: 1px solid rgba(255, 255, 255, 0.31);
     /* border: 1px solid rgba(209, 213, 219, 0.3); */
 }
 label{
-	color: #fff;
+	color: #573b8a;
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
@@ -51,7 +51,7 @@ label{
 }
 input{
 	width: 60%;
-	height: 20px;
+	height: 30px;
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
@@ -61,7 +61,7 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
-button{
+.loginBtn{
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
@@ -78,7 +78,7 @@ button{
 	transition: .2s ease-in;
 	cursor: pointer;
 }
-button:hover{
+.loginBtn:hover{
 	background: #E4C4FD;
     color: #6d44b8;
 }
