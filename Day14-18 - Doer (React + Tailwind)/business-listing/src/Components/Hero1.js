@@ -5,7 +5,7 @@ export default function Hero1(props) {
   return (
     <>
       <div className="bg-white text-6xl py-48">
-        <h1>
+        <h1 className="movingWords">
           <span>Tasks</span>
           <div className="message font-rale">
             <div className="word2 ">oh Shit!</div>

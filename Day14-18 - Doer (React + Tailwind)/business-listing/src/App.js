@@ -5,6 +5,7 @@ import Hero1 from "./Components/Hero1";
 import heroImg from "./media/images/73810-business-idea-animation.gif";
 import Footer from "./Components/Footer";
 import Signin from "./Components/Signin";
+import NoteState from "./Context/notes/NoteStates";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,19 +20,23 @@ import {
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Navbar />} />
-        </Routes>
-        <Routes>
-          <Route exact path="/" element={<Hero1 hero={heroImg} />} />
-        </Routes>
-        <Routes>
-          <Route exact path="/signin" element={<Signin />} />
-        </Routes>
-
-        {/* <Footer /> */}
-      </Router>
+      <NoteState>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Navbar />} />
+          </Routes>
+          <Routes>
+            <Route exact path="/" element={<Hero1 hero={heroImg} />} />
+          </Routes>
+          <Routes>
+            <Route exact path="/signin" element={<Signin />} />
+          </Routes>
+          <Routes>
+            <Route exact path="/" element={<Footer />} />
+          </Routes>
+          
+        </Router>
+      </NoteState>
     </div>
   );
 }

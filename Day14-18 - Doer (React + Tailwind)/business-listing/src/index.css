@@ -165,12 +165,6 @@ ul {
 
 
 
-
-
-
-
-
-
 /* Purple Diagonal lines code */
 .heroBg {
   background-color: #e5e5f7;
@@ -189,7 +183,7 @@ ul {
 
 /* oh shit , doing , done  */
 
-h1 {
+.movingWords {
   color: #333;
   font-size: 3rem;
   font-weight: 100;
