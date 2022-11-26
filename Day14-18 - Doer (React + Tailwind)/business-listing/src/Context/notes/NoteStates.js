@@ -13,15 +13,15 @@ const NoteState =(props)=>{
         setTimeout(() => {
             setState({
                 "name": "ankit",
-                "reg no.": "12018239"
+                "regno": "12018239"
             })
-        }, 1000);
+        }, 3000);
     }
 
 
-
+                            //  2 value pass hongi , 1st current state , 2nd will be a function
     return(
-        <NoteContext.Provider value={{state , updateState}}>
+        <NoteContext.Provider value={{state , updateState}}> 
             {props.children}
         </NoteContext.Provider>
     )
