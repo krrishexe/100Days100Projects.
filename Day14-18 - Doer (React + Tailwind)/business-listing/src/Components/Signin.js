@@ -5,7 +5,7 @@ import "../media/css/Signin.css";
 const Signin = () => {
   // const a = useContext(noteContext)
 
-  //         //  we used useEffect hook here cz we need to update the state after sometime , so screen pe kuchh bhi state , props , ya component update hoga to we use useEffect hook
+          //  we used useEffect hook here cz we need to update the state after sometime , so screen pe  kuchh bhi state , props , ya component update hoga to we use useEffect hook
 
   // useEffect(()=>{
   //   a.updateState()

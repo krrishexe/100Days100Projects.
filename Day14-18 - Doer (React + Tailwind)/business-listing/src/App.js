@@ -8,9 +8,9 @@ import Signin from "./Components/Signin";
 import NoteState from "./Context/notes/NoteStates";
 import {
   BrowserRouter as Router,
-  Switch,
+  // Switch,
   Route,
-  Link,
+  // Link,
   Routes
 } from "react-router-dom";
 
