@@ -13,6 +13,7 @@ import {
   // Link,
   Routes
 } from "react-router-dom";
+import Notes from "./Components/Notes";
 
 
 
@@ -29,10 +30,15 @@ function App() {
             <Route exact path="/" element={<Hero1 hero={heroImg} />} />
           </Routes>
           <Routes>
-            <Route exact path="/signin" element={<Signin />} />
+            <Route exact path="/" element={<Footer />} />
           </Routes>
           <Routes>
-            <Route exact path="/" element={<Footer />} />
+            <Route exact path="/signin" element={<Signin />} />
+          </Routes>
+
+
+          <Routes>
+            <Route exact path="/notes" element={<Notes />} />
           </Routes>
           
         </Router>

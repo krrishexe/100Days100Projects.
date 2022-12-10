@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import noteContext from '../Context/notes/noteContext';
+import React, { useContext, useEffect } from 'react'; 
+// import noteContext from '../Context/notes/noteContext';
 import "../media/css/Signin.css";
 
 const Signin = () => {
