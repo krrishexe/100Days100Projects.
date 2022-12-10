@@ -1,8 +1,13 @@
 .notesBody{
     position: absolute;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     top: 15%;
+    width: 100%;
+    /* margin-left: 500px; */
+    overflow: hidden;
 }
 .heading1{
     font-size: 30px;  
@@ -11,3 +16,9 @@
 
 
 /* ******************** Notes CSS Here *************** */
+
+.cards{
+    display: flex;
+    max-width: 800px;
+    width:calc(100% - 100px);
+}
