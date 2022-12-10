@@ -3,7 +3,7 @@ import "../media/css/Notes.css"
 const Notes = () => {
   return (
     <div>
-      <div className='notesBody my-28 container '>
+      <div className='notesBody  container '>
       <h1 className='heading1'> You can write your Notes here : </h1>
 
       

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 
 export default function Hero1(props) {
@@ -37,7 +38,7 @@ export default function Hero1(props) {
       </div>
 
       {/* ----> same code as of q-riocity ( site screenshot - side me explanation) */}
-
+      <Footer/>
 
     </>
   );

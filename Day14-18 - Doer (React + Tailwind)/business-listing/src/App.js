@@ -3,7 +3,7 @@ import "./index.css"
 import Navbar from "./Components/Navbar";
 import Hero1 from "./Components/Hero1";
 import heroImg from "./media/images/73810-business-idea-animation.gif";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Signin from "./Components/Signin";
 import NoteState from "./Context/notes/NoteStates";
 import {
@@ -23,23 +23,16 @@ function App() {
     <div className="App">
       <NoteState>
         <Router>
-          <Routes>
-            <Route exact path="/" element={<Navbar />} />
-          </Routes>
+        <Navbar />
           <Routes>
             <Route exact path="/" element={<Hero1 hero={heroImg} />} />
           </Routes>
           <Routes>
-            <Route exact path="/" element={<Footer />} />
+            <Route exact path="/notes" element={<Notes />} />
           </Routes>
           <Routes>
             <Route exact path="/signin" element={<Signin />} />
           </Routes>
-          
-          <Routes>
-            <Route exact path="/notes" element={<Notes />} />
-          </Routes>
-          
         </Router>
       </NoteState>
     </div>
