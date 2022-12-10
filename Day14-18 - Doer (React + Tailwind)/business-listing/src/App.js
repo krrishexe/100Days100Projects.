@@ -35,10 +35,9 @@ function App() {
           <Routes>
             <Route exact path="/signin" element={<Signin />} />
           </Routes>
-
-
+          
           <Routes>
-            <Route exact path="/notes" element={<><Navbar /> <Notes /></>} />
+            <Route exact path="/notes" element={<Notes />} />
           </Routes>
           
         </Router>
