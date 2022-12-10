@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="absolute right-0 left-0 z-10">
-        <div className="w-9/12 mx-auto py-5 flex justify-between items-center relative">
+        <div className="w-9/12 mx-52 py-5 flex justify-between items-center relative">
           <div>
 
           <a href="#sidenav" className="btn open">≡</a>

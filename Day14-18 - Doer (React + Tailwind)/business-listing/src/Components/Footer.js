@@ -21,7 +21,7 @@ export default function Hero2() {
       <div className=" flex items-center justify-evenly mt-10 flex-col">
         <div className="flex justify-start items-center">
 
-          <div className="card card0">
+          <div className="footerCard card0">
             <div className="hoverBorder">
             </div>
           </div>

@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <NoteState>
         <Router>
-        <Navbar />
+          <Navbar />
           <Routes>
             <Route exact path="/" element={<Hero1 hero={heroImg} />} />
           </Routes>
@@ -34,6 +34,7 @@ function App() {
             <Route exact path="/signin" element={<Signin />} />
           </Routes>
         </Router>
+        {/* <Signin /> */}
       </NoteState>
     </div>
   );

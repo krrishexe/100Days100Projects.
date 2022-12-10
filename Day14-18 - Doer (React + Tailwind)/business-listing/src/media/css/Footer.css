@@ -22,7 +22,7 @@
   .hoverBorder:hover{
       border: 1px solid white;
   }
-  .card{
+  .footerCard{
     height: 379px;
     width: 300px;
     background: grey;
