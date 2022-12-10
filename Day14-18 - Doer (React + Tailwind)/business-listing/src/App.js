@@ -38,7 +38,7 @@ function App() {
 
 
           <Routes>
-            <Route exact path="/notes" element={<Notes />} />
+            <Route exact path="/notes" element={<><Navbar /> <Notes /></>} />
           </Routes>
           
         </Router>

@@ -1,0 +1,10 @@
+.notesBody{
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+.heading1{
+    font-size: 30px;  
+    width: auto;
+    color: blue;
+}
