@@ -7,7 +7,9 @@ const app = express();
 
 app.get("/",function(req,res){
 
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=jaipur&appid=07849c23723f8062fa611d36b059cba6'
+    const query = "paris"
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=07849c23723f8062fa611d36b059cba6`
 
     https.get(url,function(response){                       // same as fetching a url and then applying .then method
         // console.log(response.statusCode);
