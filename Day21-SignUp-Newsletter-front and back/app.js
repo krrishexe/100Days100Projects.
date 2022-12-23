@@ -21,7 +21,7 @@ app.post("/",function(req,res){
     const lname = req.body.lname;
     const email = req.body.email;
 
-    res.sendFile(__dirname + "/success.html")
+
     console.log(fname , lname , email);
 
     const data = {
@@ -40,12 +40,21 @@ app.post("/",function(req,res){
     const jsonData = JSON.stringify(data);
 
     const url = 'https://us13.api.mailchimp.com/3.0/lists/6f6b23e02f'
-    
+
     const options = {
         method :'POST',
-        auth:'krish69:8b1b860e378fc8eedf7424166fb5f6bf-us13'
+        auth:'krish69:71aa6a48515429fe7de35646e05ac2d7-us13'
     }
-    const request = https.request(url,options, function(response){      
+
+    const request = https.request(url,options, function(response){    
+        
+        if(response.statusCode === 200){
+            res.sendFile(__dirname + "/success.html")
+        }
+        else{
+            res.sendFile(__dirname + "/failure.html")
+        }
+
         response.on("data",function(data){
             console.log(JSON.parse(data));
         })
@@ -63,6 +72,6 @@ app.listen(3000,function(){
 
 
 // API key
-// 8b1b860e378fc8eedf7424166fb5f6bf-us13
+// 71aa6a48515429fe7de35646e05ac2d7-us13
 
 // 6f6b23e02f
